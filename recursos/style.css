@@ -1,0 +1,334 @@
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    background: #0a0c32;
+}
+p, ol, li {
+    font-size: 20px;
+    font-weight: 400;
+}s
+p {
+    color: #0A0C32;
+}
+ol, ul {
+    margin-left: 0px;
+    
+}
+button {
+    font-family: 'Poppins';
+}
+div.navegacion {
+    width: 100%;
+    position: fixed;
+    z-index: 1990;
+    right: 0px;
+}
+.navegacion {
+    background: #1A193A;
+    justify-content: end;
+}
+.navegacion ul {
+    display: flex;
+}
+.navegacion ul li {
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navegacion ul li a {
+    color: #fff;
+    text-decoration: none;
+    animation: ease all .5s;
+
+}
+.navegacion ul li a:hover {
+ color: #D923FD;
+}
+.pad-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.fondo-blanco {
+    background: #fafafae0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -14px;
+    text-align: center;
+
+}
+    
+.fondo-blanco-parrafos {
+    background:#eeeef0;
+    padding: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 7%;
+}
+
+
+.fondo-blanco-parrafos ol {
+    padding: 20px;
+    font-weight: 600;
+}
+.contenedor.fondo-azul-claro {
+    background: #2146FF;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.contenedor-vertical {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.columna.cien.boton-inicial {
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-inicial button {
+    margin-top: -99px;
+    z-index: 1990;
+    background: #0A0C32;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.espacio-botones button {
+    background: #0A0C32;
+    border: solid 2px #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+}
+.borde {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    align-items: center;
+    padding-top: 50px;
+    
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.icono {
+    position: absolute;
+    z-index: 1990;
+    width: auto;
+    height: 250px;
+    margin-right: -10%;
+    margin-top: -3%;
+}
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.transformacion-s {
+    position: absolute;
+    z-index: 1980;
+    margin-top: 19%;
+    width: 50px;
+    left: 15%;
+}
+.columna.izquierda-cincuenta.centro-vertical.eleccion img.icono {
+    position: absolute;
+    z-index: 1990;
+    width: auto;
+    margin-right: -11%;
+    height: 250px;
+    margin-top: -6%;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.eleccion img.eleccion-s {
+    position: absolute;
+    z-index: 1980;
+    margin-top: 19%;
+    width: 50px;
+    left: 15%;
+}
+.boton-inicial button, .espacio-botones button {
+  transition: ease all .5s;
+  cursor: pointer;
+
+}
+
+.boton-inicial button:hover, .espacio-botones button:hover {
+    background: #D923FD;
+
+}
+.direccion {
+    display: flex;
+    z-index: 1990;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.columna.cien.borde h1 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+.columna h2 {
+    color: blueviolet;
+    text-transform: uppercase;
+    font-size: 37px;
+    letter-spacing: 5px;
+}
+.derecha-cincuenta h3, .derecha-cincuenta h2 {
+    padding-left: 7%;
+} 
+.columna.izquierda-cincuenta.centro-vertical.robot img {
+    position: fixed;
+    z-index: 1989;
+    left: 12%;
+}
+.cien {
+    width: 100%
+}
+.imageness img {
+ width: 100%;
+}
+
+.izquierda-cincuenta {
+flex: 5%;
+padding: 20px;
+
+}
+.derecha {
+    justify-content: left;
+}
+.derecha-cincuenta {
+flex: 80%;
+}
+
+
+.centro-vertical {
+    align-items: center;
+}
+
+
+.centro {
+    justify-content: center;
+}
+
+.contenedor h3 {
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.contenedor h3::after {
+    content: '';
+    border: 2px solid #fff;
+    display: block;
+    width: 4%;
+}
+.borde button {
+    z-index: 1990;
+    
+}
+.parrafos {
+    font-size: 20px;
+}
+
+.texto-centro {
+    text-align: center;
+}
+footer {
+    background: blue;
+}
+
+.reveal.columna.derecha-cincuenta.centro.amarillo h2  {
+    color: #fab34d;
+}
+.dot.amarillo {
+    background: #fab34d ;
+}
+.reveal.columna.derecha-cincuenta.centro.lila h2, .reveal.columna.derecha-cincuenta.centro.lila li::marker {
+    color: #FF55A8;
+}
+.dot.lila {
+    background: #FF55A8 ;
+}
+.reveal.columna.derecha-cincuenta.centro.cyan h2, .reveal.columna.derecha-cincuenta.centro.cyan li::marker {
+    color: #7BF5DA;
+}
+
+.reveal.columna.derecha-cincuenta.centro.violeta h2, .reveal.columna.derecha-cincuenta.centro.violeta li::marker {
+    color: #D923FD;
+}
+
+.dot.violeta {
+    background: #D923FD ;
+}
+.reveal.columna.derecha-cincuenta.centro.naranja h2, .reveal.columna.derecha-cincuenta.centro.naranja li::marker {
+    color: #FF901F;
+}
+
+.reveal.columna.derecha-cincuenta.centro.limon h2, .reveal.columna.derecha-cincuenta.centro.limon li::marker {
+    color: #D4DE25;
+}
+
+.reveal.columna.derecha-cincuenta.centro.rojito h2, .reveal.columna.derecha-cincuenta.centro.rojito li::marker  {
+    color: #F1363D;
+}
+.reveal.columna.derecha-cincuenta.centro.azul h2, .reveal.columna.derecha-cincuenta.centro.azul li::marker, .reveal.columna.derecha-cincuenta.centro.azul p {
+    color: #fff;
+}
+.dot.azul {
+    background: #2146FF ;
+}
+
+.reveal.columna.derecha-cincuenta.centro.azul p {
+    padding-left: 7%;
+}
+/*Móviles*/
+@media (max-width: 800px) {
+    .contenedor {
+      flex-direction: column;
+    }
+    .reversa {
+        flex-direction: column-reverse;
+      }
+    .izquierda-cincuenta, .derecha-cincuenta {
+        width: 100%;
+    }
+  }
+
+  /* Portátiles */
+@media (min-width: 1001px) and (max-width: 1899px) { 
+
+}

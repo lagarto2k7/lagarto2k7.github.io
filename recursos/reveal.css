@@ -1,0 +1,14 @@
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.reveal {
+    position: relative;
+    transform: translate(0px, 50px) scale(0.95, 0.95);
+    opacity: 0;
+    transition: .3s all ease;
+    filter: blur(15px);
+    padding-top: 20px;
+}
