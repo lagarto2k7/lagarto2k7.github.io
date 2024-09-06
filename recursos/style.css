@@ -130,137 +130,94 @@ div.navegacion {
   border-image-slice: 1;
 }*/
 .borde-externo {
-    border: solid 3px yellow;
+    border: solid 2px #2246ff;
     position: relative;
     margin-top: 100px;
     padding-left: 10px;
     padding-bottom: 10px;
-    
+    border-radius: 20px;
 }
 .borde {
     margin-right: -10px;
     margin-top: -15px;
-    border: solid 2px red;
+    border: solid 2px #fab34d;
     align-items: center;
     padding-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.columna.izquierda-cincuenta.centro-vertical.transformacion img.icono {
-    position: absolute;
-    z-index: 1990;
-    width: auto;
-    height: 250px;
-    left: 188px;
-    margin-top: -35px;
-}
+
 .columna.izquierda-cincuenta.centro-vertical.transformacion img.transformacion-s {
-    position: absolute;
-    z-index: 1980;
-    margin-top: 290px;
-    width: 50px;
-    left: 285px;
+    
+    margin-top: 240px;
+    
 }
 
 
-.columna.izquierda-cincuenta.centro-vertical.eleccion img.icono {
-    position: absolute;
-    z-index: 1990;
-    width: auto;
-    height: 250px;
-    margin-top: -125px;
-    left: 188px;
-}
+
 
 .columna.izquierda-cincuenta.centro-vertical.eleccion img.eleccion-s {
-    position: absolute;
-    z-index: 1980;
-    margin-top: 360px;
-    width: 50px;
-    left: 285px;
+  
+    margin-top: 230px;
+    
 }
 
-.columna.izquierda-cincuenta.centro-vertical.formacion img.icono {
-    position: absolute;
-    z-index: 1990;
-    width: auto;
-    height: 250px;
-    margin-top: -31px;
-    left: 188px;
-}
+
 
 .columna.izquierda-cincuenta.centro-vertical.formacion img.formacion-s {
-    position: absolute;
-    z-index: 1980;
-    margin-top: 395px;
-    width: 50px;
-    left: 285px;
+ 
+    margin-top: 240px;
+    
 }
-.columna.izquierda-cincuenta.centro-vertical.recursos img.icono {
-    position: absolute;
-    z-index: 1990;s
-    width: auto;
-    height: 250px;
-    margin-top: -120px;
-    left: 188px;
-}
+
 
 .columna.izquierda-cincuenta.centro-vertical.recursos img.recursos-s {
-    position: absolute;
-    z-index: 1980;
-    margin-top: 395px;
-    width: 50px;
-    left: 285px;
+  
+    margin-top: 236px;
+    
 }
 
-.columna.izquierda-cincuenta.centro-vertical.donde img.icono {
-    position: absolute;
-    z-index: 1990;
-    width: auto;
-    height: 250px;
-    margin-top: -31px;
-    left: 188px;
-}
+
 
 .columna.izquierda-cincuenta.centro-vertical.donde img.donde-s {
-    position: absolute;
-    z-index: 1980;
-    margin-top: 395px;
-    width: 50px;
-    left: 285px;
+  
+    margin-top: 240px;
+    
 }
 
-.columna.izquierda-cincuenta.centro-vertical.desempenar img.icono {
-    position: absolute;
-    z-index: 1990;
-    width: auto;
-    height: 250px;
-    margin-top: -185px;
-    left: 188px;
-}
+
 
 .columna.izquierda-cincuenta.centro-vertical.desempenar img.desempenar-s {
-    position: absolute;
-    z-index: 1980;
-    margin-top: 395px;
-    width: 50px;
-    left: 285px;
+
+    margin-top: 240px;
+    
 }
 
-.columna.izquierda-cincuenta.centro-vertical.empleabilidad img.icono {
-    position: absolute;
+
+.columna.izquierda-cincuenta.centro-vertical.empleabilidad img.empleabilidad-s {
+
+    margin-top: 244px;
+    
+}
+
+
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.icono, .columna.izquierda-cincuenta.centro-vertical.eleccion img.icono, .columna.izquierda-cincuenta.centro-vertical.formacion img.icono, .columna.izquierda-cincuenta.centro-vertical.recursos img.icono, .columna.izquierda-cincuenta.centro-vertical.donde img.icono, .columna.izquierda-cincuenta.centro-vertical.desempenar img.icono, .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.icono {
+
+	position: absolute;
     z-index: 1990;
     width: auto;
     height: 250px;
-    margin-top: 0;
-    left: 188px;
+    margin-left: 80px;
+
 }
 
-.columna.izquierda-cincuenta.centro-vertical.empleabilidad img.empleabilidad-s {
-    position: absolute;
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.transformacion-s, .columna.izquierda-cincuenta.centro-vertical.eleccion img.eleccion-s, .columna.izquierda-cincuenta.centro-vertical.formacion img.formacion-s, .columna.izquierda-cincuenta.centro-vertical.recursos img.recursos-s, .columna.izquierda-cincuenta.centro-vertical.donde img.donde-s, .columna.izquierda-cincuenta.centro-vertical.desempenar img.desempenar-s, .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.empleabilidad-s {
+	position: absolute;
     z-index: 1980;
-    margin-top: 453px;
     width: 50px;
-    left: 285px;
+    margin-left: 186px;
+   
 }
 
 .columna.izquierda-cincuenta.centro-vertical.cumplido img.icono {
@@ -268,23 +225,22 @@ div.navegacion {
     z-index: 1990;
     width: auto;
     height: 280px;
-    margin-top: 0;
-    left: 188px;
+    margin-top: -48px;
+    margin-left: 80px;
 }
 
 .columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-circulo {
     position: absolute;
     width: 80px;
-    margin-top: -213px;
-    margin-left: 195px;
+    margin-top: -170px;
+    margin-left: 169px;
 }
 .columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-barra {
     position: absolute;
-    margin-left: 212px;
+    margin-left: 50px;
     width: 320px;
-    margin-top: 25px;
+    margin-top: -59px;
 }
-
 
 .boton-inicial button, .espacio-botones button {
   transition: ease all .5s;
@@ -312,7 +268,6 @@ div.navegacion {
 .columna {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
 }
 .columna.cien.borde h1 {
@@ -328,7 +283,7 @@ div.navegacion {
     letter-spacing: 5px;
 }
 .derecha-cincuenta h3, .derecha-cincuenta h2, .fondo-blanco-parrafos, .reveal.columna.derecha-cincuenta.centro.azul p {
-    padding-left: 150px;
+    padding-left: 175px;
 } 
 
 .cien {
@@ -351,9 +306,9 @@ flex: 80%;
 }
 
 
-.centro-vertical {
+/*.centro-vertical {
     align-items: center;
-}
+}*/
 
 
 .centro {
@@ -431,10 +386,10 @@ footer {
 
 .contenedor.fondo-azul-claro {
     background: #2146FF;
-    margin-top: 62px;
+    margin-top: 60px;
     margin-bottom: 100px;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 
 /*Móviles*/
