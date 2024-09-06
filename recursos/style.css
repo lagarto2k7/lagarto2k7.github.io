@@ -56,12 +56,12 @@ div.navegacion {
     padding-right: 10%;
 }
 .fondo-blanco {
-    background: #fafafae0;
+    background: #eeeef0;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: -14px;
     text-align: center;
-
+    z-index: 1996;
 }
     
 .fondo-blanco-parrafos {
@@ -405,6 +405,22 @@ footer {
     }
   }
 
+  /*flecha*/
+    .fixme { 
+        background: green;
+        color: white;
+        top: 20%;
+        left: 80px;
+     }
+
+    img.flecha {
+        width: 58px;
+     } 
+
+     #miObjeto {
+        margin-left: 297px;
+        z-index: 1989;
+    }
   /* Portátiles */
 @media (min-width: 1001px) and (max-width: 1899px) { 
     .columna h2 {

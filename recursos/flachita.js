@@ -1,26 +1,15 @@
-$(document).ready(function() {
-    // Selecciona el div donde quieres hacer el scroll y el elemento que quieres fijar
-    var divScroll = $('#div-donde-hacer-scroll');
-    var elementoFijo = $('#elemento-a-fijar');
-  
-    // Al hacer scroll dentro del div...
-    divScroll.scroll(function() {
-      // Calcula la posición del elemento fijo dentro del div
-      var posicionElemento = elementoFijo.offset().top - divScroll.offset().top;
-  
-      // Si la posición del elemento es menor a la altura del div visible...
-      if (posicionElemento < divScroll.height()) {
-        // Fija el elemento
-        elementoFijo.css({
-          position: 'fixed',
-          top: 0
+var fixmeTop = $('.fixme').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.fixme').css({
+            position: 'fixed',
+            top: '50%',
+            left: '80px'
         });
-      } else {
-        // Si no, vuelve a su posición original
-        elementoFijo.css({
-          position: 'static',
-          top: 'auto'
+    } else {
+        $('.fixme').css({
+            position: 'static'
         });
-      }
-    });
-  });
+    }
+});
