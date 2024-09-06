@@ -1,12 +1,12 @@
-
-
 body {
     font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
-    margin: 0;
     padding: 0;
     max-width: 1920px;
     background: #0a0c32;
+    max-width: 1920px;
+    margin: 0 auto;
+    
 }
 p, ol, li {
     font-size: 20px;
@@ -25,7 +25,7 @@ button {
 div.navegacion {
     width: 100%;
     position: fixed;
-    z-index: 1990;
+    z-index: 2023;
     right: 0px;
 }
 .navegacion {
@@ -76,13 +76,7 @@ div.navegacion {
     padding: 20px;
     font-weight: 600;
 }
-.contenedor.fondo-azul-claro {
-    background: #2146FF;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+
 .contenedor {
     display: flex;
     flex-direction: row;
@@ -103,7 +97,7 @@ div.navegacion {
 }
 
 .boton-inicial button {
-    margin-top: -99px;
+    margin-top: -31px;
     z-index: 1990;
     background: #0A0C32;
     border: 2px solid #fff;
@@ -112,6 +106,7 @@ div.navegacion {
     font-size: 25px;
     font-weight: 600;
     color: #fff;
+    position: absolute;
 }
 .espacio-botones button {
     background: #0A0C32;
@@ -263,7 +258,7 @@ div.navegacion {
 .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.empleabilidad-s {
     position: absolute;
     z-index: 1980;
-    margin-top: 425px;
+    margin-top: 453px;
     width: 50px;
     left: 285px;
 }
@@ -276,6 +271,21 @@ div.navegacion {
     margin-top: 0;
     left: 188px;
 }
+
+.columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-circulo {
+    position: absolute;
+    width: 80px;
+    margin-top: -213px;
+    margin-left: 195px;
+}
+.columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-barra {
+    position: absolute;
+    margin-left: 212px;
+    width: 320px;
+    margin-top: 25px;
+}
+
+
 .boton-inicial button, .espacio-botones button {
   transition: ease all .5s;
   cursor: pointer;
@@ -419,6 +429,13 @@ footer {
     background: #2146FF ;
 }
 
+.contenedor.fondo-azul-claro {
+    background: #2146FF;
+    margin-top: 62px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 /*Móviles*/
 @media (max-width: 800px) {
