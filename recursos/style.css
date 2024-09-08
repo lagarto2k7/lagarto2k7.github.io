@@ -98,7 +98,7 @@ div.navegacion {
 
 .boton-inicial button {
     margin-top: -31px;
-    z-index: 1990;
+    z-index: 1998;
     background: #0A0C32;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -106,7 +106,7 @@ div.navegacion {
     font-size: 25px;
     font-weight: 600;
     color: #fff;
-    position: absolute;
+    position: relative;
 }
 .espacio-botones button {
     background: #0A0C32;
@@ -117,25 +117,17 @@ div.navegacion {
     color: #fff;
     border-radius: 10px;
 }
-/*.borde {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    border-radius: 30px;
-    overflow: hidden;
-    align-items: center;
-    padding-top: 50px;
-    
-  border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-  border-image-slice: 1;
-}*/
+
 .borde-externo {
+    
+    background: #0a0c32;
     border: solid 2px #2246ff;
     position: relative;
     margin-top: 100px;
     padding-left: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
+    z-index: 1986;
 }
 .borde {
     margin-right: -10px;
@@ -254,7 +246,7 @@ div.navegacion {
 }
 .direccion {
     display: flex;
-    z-index: 1990;
+    z-index: 1998;
 }
 .dot {
     height: 25px;
@@ -391,7 +383,43 @@ footer {
     padding-top: 100px;
     padding-bottom: 120px;
 }
+.columna.cien.boton-inicial img.fondo-circulo {
+    position: absolute;
+}
 
+#miObjeto {
+    margin-left: 297px;
+    z-index: 1984;
+}
+
+.fondo-circulo-uno img.fondo-circulo {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -50px;
+    z-index: 1985;
+    height: 290px;
+}
+
+.boton-del-inicio {
+    text-align: center;
+    margin-top: -30px;
+    z-index: 2000;
+    position: relative;
+}
+
+.boton-del-inicio button{
+   
+        margin-top: -31px;
+        background: #0A0C32;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+        position: absolute;
+    
+}
 /*Móviles*/
 @media (max-width: 800px) {
     .contenedor {
@@ -419,7 +447,6 @@ footer {
 
      #miObjeto {
         margin-left: 297px;
-        z-index: 1989;
     }
   /* Portátiles */
 @media (min-width: 1001px) and (max-width: 1899px) { 
@@ -458,6 +485,22 @@ footer {
     .contenedor.fondo-azul-claro {
         margin-top: 60px;
        
+    }
+
+    #miObjeto {
+        margin-left: 218px;
+    }
+
+    .fondo-circulo-uno img.fondo-circulo {
+        margin-left: 185px;
+        margin-top: -40px;
+    }
+
+    .fondo-circulo-uno img.fondo-circulo {
+  
+        margin-left: 185px;
+        margin-top: -40px;
+   
     }
 }
 

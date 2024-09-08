@@ -20,3 +20,24 @@ function posicionarObjeto() {
 // Llamar a la función al cargar la página y cada vez que se redimensione la ventana
 posicionarObjeto();
 window.addEventListener('resize', posicionarObjeto);
+
+// Obtener una referencia al elemento que queremos ocultar
+const elementoAOcultar = document.getElementById('miObjetos');
+
+// Obtener una referencia al elemento con el ID que marca el punto de ocultación
+const puntoDeOcultacion = document.getElementById('titulo-banners');
+
+// Función para verificar si el elemento ha sido alcanzado por el scroll
+function verificarScroll() {
+  const posicionDelElemento = puntoDeOcultacion.offsetTop;
+  const posicionActualDelScroll = window.pageYOffset;
+
+  if (posicionActualDelScroll >= posicionDelElemento) {
+    elementoAOcultar.style.display = 'none';
+  } else {
+    elementoAOcultar.style.display = 'block';
+  }
+}
+
+// Escuchar el evento de scroll y ejecutar la función de verificación
+window.addEventListener('scroll', verificarScroll);
