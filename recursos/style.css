@@ -468,11 +468,22 @@ footer {
     .contenedor {
       flex-direction: column;
     }
+
     .reversa {
         flex-direction: column-reverse;
       }
     .izquierda-cincuenta, .derecha-cincuenta {
         width: 100%;
+    }
+    div.navegacion {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .columna.cien.borde h1 {
+        font-size: 35px;
+        padding-top: 40px;
     }
   }
 
@@ -490,6 +501,12 @@ footer {
 
      #miObjeto {
         margin-left: 297px;
+    }
+
+    .derecha-cincuenta h3, .derecha-cincuenta h2, .fondo-blanco-parrafos, .reveal.columna.derecha-cincuenta.centro.azul p {
+        padding-left: 0;
+        margin-top: 42px;
+        padding: 30px;
     }
   /* Portátiles */
 @media (min-width: 1001px) and (max-width: 1899px) { 
