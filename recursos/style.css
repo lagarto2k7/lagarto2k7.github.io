@@ -492,6 +492,34 @@ footer {
         padding: 30px;
     }
 
+    .columna h2 {
+        color: blueviolet;
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+
+    .columna.izquierda-cincuenta.centro-vertical.transformacion img.icono, .columna.izquierda-cincuenta.centro-vertical.eleccion img.icono, .columna.izquierda-cincuenta.centro-vertical.formacion img.icono, .columna.izquierda-cincuenta.centro-vertical.recursos img.icono, .columna.izquierda-cincuenta.centro-vertical.donde img.icono, .columna.izquierda-cincuenta.centro-vertical.desempenar img.icono, .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.icono {
+        position: static;
+        z-index: 1990;
+        width: auto;
+        height: auto;
+        margin-left: inherit;
+    }
+
+    .columna.izquierda-cincuenta.centro-vertical.cumplido img.icono {
+        position: static;
+        z-index: 1990;
+        width: auto;
+        height: auto;
+        margin-top: -48px;
+        margin-left: unset;
+    }
+
+    .columna.izquierda-cincuenta.centro-vertical.transformacion img.transformacion-s, .columna.izquierda-cincuenta.centro-vertical.eleccion img.eleccion-s, .columna.izquierda-cincuenta.centro-vertical.formacion img.formacion-s, .columna.izquierda-cincuenta.centro-vertical.donde img.donde-s, .columna.izquierda-cincuenta.centro-vertical.recursos img.recursos-s, .columna.izquierda-cincuenta.centro-vertical.desempenar img.desempenar-s, .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.empleabilidad-s, #miObjeto, .columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-circulo, .columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-barra {
+        display: none;
+    }
+
   }
 
   /*flecha*/
