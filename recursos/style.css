@@ -485,6 +485,13 @@ footer {
         font-size: 35px;
         padding-top: 40px;
     }
+
+    .derecha-cincuenta h3, .derecha-cincuenta h2, .fondo-blanco-parrafos, .reveal.columna.derecha-cincuenta.centro.azul p {
+        padding-left: 0;
+        margin-top: 42px;
+        padding: 30px;
+    }
+
   }
 
   /*flecha*/
@@ -503,11 +510,8 @@ footer {
         margin-left: 297px;
     }
 
-    .derecha-cincuenta h3, .derecha-cincuenta h2, .fondo-blanco-parrafos, .reveal.columna.derecha-cincuenta.centro.azul p {
-        padding-left: 0;
-        margin-top: 42px;
-        padding: 30px;
-    }
+   
+
   /* Portátiles */
 @media (min-width: 1001px) and (max-width: 1899px) { 
     .columna h2 {
