@@ -466,6 +466,7 @@ footer {
 @media (max-width: 850px) {
     .contenedor {
       flex-direction: column;
+  
     }
 
     .reversa {
@@ -563,10 +564,7 @@ footer {
         width: 58px;
      } 
 
-     #miObjeto {
-        margin-left: 297px;
-    }
-
+   
    
 
   /* Portátiles */
@@ -684,7 +682,7 @@ footer {
     }
 
     #miObjeto {
-        margin-left: 129px;
+        margin-left: 133px;
     }
 
     .columna.izquierda-cincuenta.centro-vertical.cumplido img.icono {
@@ -722,5 +720,12 @@ footer {
         text-align: center;
         font-weight: 600;
     }
+
+    div.navegacion {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+   
 }
 
