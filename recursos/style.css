@@ -328,7 +328,7 @@ div.navegacion {
 }
 
 .izquierda-cincuenta {
-flex: 5%;
+flex: 100px;
 padding: 20px;
 
 }
@@ -548,6 +548,21 @@ footer {
     .fondo-blanco-parrafos {
         
         border-radius: 20px;
+    }
+
+    .contenedor.navegacion ul {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .8);
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        z-index: 980;
+        padding: 0;
+        margin-top: -12px;
     }
 
   }
