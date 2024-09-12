@@ -56,6 +56,11 @@ div.navegacion {
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.pad-5 {
+    padding-left: 3%;
+    padding-right: 3%;
+}
 .fondo-blanco {
     background: #eeeef0;
     padding-top: 30px;
@@ -332,9 +337,9 @@ flex: 80%;
 }
 
 
-/*.centro-vertical {
-    align-items: center;
-}*/
+.arribita {
+    padding-top: 50px;
+}
 
 
 .centro {
@@ -354,6 +359,21 @@ flex: 80%;
     display: block;
     width: 4%;
 }
+
+h3.subtitulo-internas {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: -40px;
+}
+
+h3.subtitulo-internas::after {
+    content: '';
+    border-bottom: 3px solid #fff;
+    display: block;
+    width: 30%;
+    padding-top: 20px;
+}
 .borde button {
     z-index: 1990;
     
@@ -365,9 +385,7 @@ flex: 80%;
 .texto-centro {
     text-align: center;
 }
-footer {
-    background: blue;
-}
+
 
 .reveal.columna.derecha-cincuenta.centro.amarillo h2  {
     color: #fab34d;
@@ -454,6 +472,126 @@ footer {
         position: absolute;
     
 }
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: #1a193a;
+    margin-top: 50px;
+}
+/*acordeon*/
+:root {
+    --primary: #227093;
+    --secondary: #ff5252;
+    --background: #eee;
+    --highlight: #ffda79;
+    /* Theme color */
+    --theme: var(--primary);
+  }
+
+  
+  /* Core styles/functionality */
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+  }
+  .tab input:checked ~ .tab__content {
+    max-height: 50rem;
+    background: #f2ebfd;
+    color: #0a0c32;
+}
+  
+  /* Visual styles */
+  .accordion {
+    color: #fff;
+    overflow: hidden;
+    width: 100%;
+  }
+  .tab__label, .tab__close {
+    display: flex;
+    color: #0a0c32;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 25px;
+}
+  .tab__label {
+    justify-content: start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+  }
+  .tab__label::after {
+    content: "+";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+    position: absolute;
+    right: 6%;
+  }
+  .tab input:checked + .tab__label::after {
+    transform: rotate(270deg);
+  }
+  .tab__content p {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .accordion--radio {
+    --theme: var(--secondary);
+  }
+  
+  /* Arrow animation */
+  .tab input:not(:checked) + .tab__label:hover::after {
+    animation: bounce .5s infinite;
+  }
+  @keyframes bounce {
+    25% {
+      transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+      transform: rotate(90deg) translate(-.25rem);
+    }
+  }
+  
+/*emprendimiento*/
+.borde-externo.derecha h1, .fondo-blanco.pad-10.derecha {
+    text-align: left;
+}
+    .fondo-blanco.pad-5.derecha {
+    text-align: left;
+}
+.columna.cien.borde h1.titulo-internas, .columna.cien.borde h3.subtitulo-internas {
+    text-align: left;
+    padding-top: 30px;
+}
+
+.tab__content.pad-5 h5 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tab__label.pad-5 span {
+    color: #9d96a8;
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+
+
 /*Móviles*/
 @media (max-width: 850px) {
     .contenedor {
@@ -547,15 +685,39 @@ footer {
         flex-direction: column;
         -webkit-justify-content: center;
         justify-content: center;
-        background: rgba(0, 0, 0, .8);
+        background: rgb(22 22 56 / 87%);
         position: absolute;
         top: 80px;
         left: 0px;
         width: 100%;
         z-index: 980;
         padding: 0;
-        margin-top: -12px;
+        margin-top: -14px;
+        backdrop-filter: blur(10px);
+
     }
+
+    .tab__label, .tab__close {
+        font-size: 18px;
+    }
+
+    p, ol, li {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    h3.subtitulo-internas {
+        font-size: 19px;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    .columna.cien.borde h1 {
+        font-size: 30px;
+        line-height: 38px;
+        padding-bottom: 20px;
+    }
+    
 
   }
 
@@ -627,6 +789,14 @@ footer {
         margin-left: 185px;
         margin-top: -40px;
    
+    }
+    .tab__label, .tab__close {
+   
+        font-size: 20px;
+    }
+    h3.subtitulo-internas {
+     
+        margin-bottom: 0px;
     }
 }
 
@@ -731,6 +901,10 @@ footer {
     div.navegacion {
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .tab__label, .tab__close {
+     
+        font-size: 20px;
     }
 
    
