@@ -605,8 +605,22 @@ strong.mayus {
     font-size: 20px;
     text-transform: uppercase;
 }
+section.accordion button {
+    background: #0a0c32;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: solid 2px #fff;
+    cursor: pointer;
+    transition: ease all .5s;
+}
 
+section.accordion button:hover {
+    background: #FF55A8;
 
+}
 /*Móviles*/
 @media (max-width: 850px) {
     .contenedor {
