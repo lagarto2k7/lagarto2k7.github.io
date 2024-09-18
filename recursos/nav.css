@@ -55,7 +55,7 @@
     h1 {
         margin: 0 auto;
 		}
-		ul {
+		div.navegacion ul {
 				-webkit-flex-direction: column;
         flex-direction: column;
         -webkit-justify-content: center;
@@ -67,17 +67,17 @@
         width: 100%;
         z-index: 980;
     }
-    ul li {
+    div.navegacion ul li {
         padding: 10px;
         text-align: center;
     }
-    ul li a {
+    div.navegacion ul li a {
 				display: block;
         background: transparent;
         margin: 0px;
         padding: 20px;
     }
-    ul li a:hover {
+    div.navegacion ul li a:hover {
         color: #000;
         background: #fff;
     }
