@@ -766,7 +766,7 @@ section.accordion button:hover {
 #progressbar li {
     list-style-type: none;
     font-size: 15px;
-    width: 25%;
+    width: 14%;
     float: left;
     position: relative;
     font-weight: 400
@@ -791,6 +791,22 @@ section.accordion button:hover {
     font-family: FontAwesome;
     content: "\f00c"
 }
+
+#progressbar #f:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar #g:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar #h:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
 
 #progressbar li:before {
     width: 50px;
