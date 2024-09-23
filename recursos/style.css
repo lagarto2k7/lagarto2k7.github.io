@@ -342,9 +342,7 @@ flex: 80%;
 }
 
 
-.centro {
-    justify-content: center;
-}
+
 
 .contenedor h3 {
     font-size: 35px;
@@ -625,10 +623,7 @@ section.accordion button:hover {
     background: #FF55A8;
 
 }
-.centro {
-    text-align: center;
 
-}
 .derechas {
     text-align: left;
 }
