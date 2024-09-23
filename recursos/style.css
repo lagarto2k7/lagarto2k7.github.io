@@ -338,7 +338,7 @@ flex: 80%;
 
 
 .arribita {
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 
@@ -625,7 +625,13 @@ section.accordion button:hover {
     background: #FF55A8;
 
 }
+.centro {
+    text-align: center;
 
+}
+.derechas {
+    text-align: left;
+}
 /*steps*/
 
 
@@ -642,7 +648,6 @@ section.accordion button:hover {
 }
 
 #msform fieldset {
-    background: white;
     border: 0 none;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -651,7 +656,9 @@ section.accordion button:hover {
     padding-bottom: 20px;
     position: relative
 }
-
+fieldset p {
+    color: #fff;
+}
 .form-card {
     text-align: left
 }
@@ -660,20 +667,19 @@ section.accordion button:hover {
     display: none
 }
 
-#msform input,
-#msform textarea {
-    padding: 8px 15px 8px 15px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
+#msform input, #msform textarea {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
     margin-bottom: 25px;
     margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
     color: #2C3E50;
     background-color: #ECEFF1;
-    font-size: 16px;
-    letter-spacing: 1px
+    font-size: 22px;
+    letter-spacing: 1px;
+    height: 70px;
 }
 
 #msform input:focus,
@@ -686,21 +692,51 @@ section.accordion button:hover {
 }
 
 #msform .action-button {
-    width: 100px;
-    background: #673AB7;
-    font-weight: bold;
+    max-width: 200px;
+    background: transparent;
     color: white;
     border: 0 none;
-    border-radius: 0px;
+    border-radius: 9px;
     cursor: pointer;
-    padding: 10px 5px;
+    padding: 20px 25px;
     margin: 10px 0px 10px 5px;
-    float: right
+    border: solid 1px #2246ff;
+    transition: ease all .3s;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+form#msform button {
+    background: #fff;
+    width: 49.8%;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: transparent;
+    color: #f555a8;
+    transition: ease all .3s;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 50px
+}
+
+form#msform button:hover {
+    background: #f555a8;
+    color: #fff
+}
+
+form#msform button.next.action-button {
+    margin-top: 500px;
 }
 
 #msform .action-button:hover,
-#msform .action-button:focus {
-    background-color: #311B92
+#msform .action-button:focus, 
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #2246ff
 }
 
 #msform .action-button-previous {
@@ -716,10 +752,7 @@ section.accordion button:hover {
     float: right
 }
 
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-    background-color: #000000
-}
+
 
 .card {
     z-index: 0;
@@ -849,6 +882,25 @@ section.accordion button:hover {
     width: 100%;
     object-fit: cover
 }
+
+.derechas h4 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.derechas input, .derechas input::placeholder  {
+    padding: 10px 20px;
+    color: #5A7184;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 22px;
+
+
+}
+
+
 /*Móviles*/
 @media (max-width: 850px) {
     .contenedor {
