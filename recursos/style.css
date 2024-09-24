@@ -1035,6 +1035,7 @@ li.active span {
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0;
+    margin-bottom: 35px;
 }
 .derechas::after {
     content: '';
@@ -1049,9 +1050,7 @@ li.active span {
 
 
 }
-fieldset input {
-    display: inline-block;
-}
+
 #progressbar li.active#account::before  {
     border: solid 3px #fab34d;
 }
@@ -1125,6 +1124,29 @@ fieldset input {
     flex-wrap: wrap;
 }
 
+.gapp a {
+    display: flex;
+    text-decoration: none;
+    flex: 30%;
+    flex-basis: auto;
+}
+
+
+
+table, td, th {  
+    border: 1px solid #ffffff33;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
 /*Móviles*/
 @media (max-width: 850px) {
     .contenedor {
