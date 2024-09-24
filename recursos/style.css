@@ -707,7 +707,7 @@ fieldset p {
 }
 
 #msform .action-button, form#msform button.boton-ruta-reiniciar {
-    max-width: 200px;
+    width: 200px;
     background: transparent;
     color: white;
     border: 0 none;
@@ -725,7 +725,6 @@ fieldset p {
 }
 
 form#msform button {
-    width: 49.8%;
     padding: 18px;
     font-size: 20px;
     border-radius: 10px;
@@ -735,6 +734,7 @@ form#msform button {
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 10px;
+    flex: 20%;
 }
 
 .cualificacion button {
@@ -838,7 +838,9 @@ form#msform button.next.action-button {
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
-    color: lightgrey
+    color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #progressbar .active {
@@ -1112,8 +1114,16 @@ fieldset input {
     background:  transparent;
 }
 
-
-
+.derechas h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.gapp {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 /*Móviles*/
 @media (max-width: 850px) {
@@ -1241,9 +1251,74 @@ fieldset input {
         padding-bottom: 20px;
     }
     
+    form#msform button {
+        width: 100%;
+    }
+
+    #msform .action-button-previous, #msform .action-button, form#msform button.boton-ruta-reiniciar {
+        max-width: 100%;
+    }
+    #progressbar li {
+        width: 25%;
+        flex: 20%;
+    }
+
+    #progressbar li:before {
+        content: '';
+        width: 50px;
+        height: 50px;
+        
+    }
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: #142998;
+        position: absolute;
+        left: 80px;
+        top: 28px;
+        z-index: -1;
+    }
+
+    #progressbar li h4 {
+        
+        font-size: 10px;
+    }
+    #progressbar li {
+        font-size: 16px;
+       
+    }
+
+    #progressbar #account:before, #progressbar #personal:before, #progressbar #payment:before, #progressbar #confirm:before, #progressbar #financiacion:before,#progressbar #empleador:before, #progressbar #cargo:before, #progressbar li.active#personal::before, #progressbar li.active#payment::before, #progressbar li.active#confirm::before, #progressbar li.active#financiacion::before, #progressbar li.active#empleador::before, #progressbar li.active#cargo::before    {
+        background-size: contain;
+    }
+
+    .derechas h4 {
+        font-size: 20px;
 
   }
+  .derechas input, .derechas input::placeholder {
+    font-size: 16px;
+  }
 
+  #msform input, #msform textarea {
+    height: 55px;
+  }
+
+  form#msform button {
+    
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: transparent;
+    transition: ease all .3s;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    
+}
+}
   /*flecha*/
     .fixme { 
         background: green;
