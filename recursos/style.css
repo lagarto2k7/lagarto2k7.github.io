@@ -1508,3 +1508,14 @@ fieldset input {
    
 }
 
+@media (min-width: 1000px) and (max-width: 1300px) { 
+    #miObjeto {
+        margin-left: 210px;
+    }
+    
+    .contenedor.fondo-azul-claro {
+        
+        padding-bottom: 95px;
+    }
+}
+
