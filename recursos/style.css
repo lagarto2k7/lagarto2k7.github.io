@@ -698,64 +698,93 @@ fieldset p {
     height: 70px;
 }
 
-#msform input:focus,
-#msform textarea:focus {
+#msform input:focus, #msform textarea:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #673AB7;
-    outline-width: 0
+    border: 1px solid transparent;
+    outline-width: 0;
 }
 
-#msform .action-button {
+#msform .action-button, form#msform button.boton-ruta-reiniciar {
     max-width: 200px;
     background: transparent;
     color: white;
     border: 0 none;
     border-radius: 9px;
     cursor: pointer;
-    padding: 20px 25px;
+    padding: 24px 19px;
     margin: 10px 0px 10px 5px;
     border: solid 1px #2246ff;
     transition: ease all .3s;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     margin-top: 25px;
+    letter-spacing: 1px;
 }
 
 form#msform button {
-    background: #fff;
     width: 49.8%;
     padding: 18px;
     font-size: 20px;
     border-radius: 10px;
     border: transparent;
-    color: #f555a8;
     transition: ease all .3s;
     cursor: pointer;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 50px
+    margin-top: 10px;
 }
 
-form#msform button:hover {
+.cualificacion button {
+    background: #fff;
+    color: #f555a8;
+}
+.cualificacion button:hover {
     background: #f555a8;
+    color: #fff;
+
+}
+.programa button {
+    color: #1EA27E;
+    background: #fff;
+} 
+
+.programa button:hover {
+    background: #7bf5da;
+    color: #0d1035
+}
+
+.institucion button {
+    color: #d922fd;
+    background: #fff;
+} 
+
+.institucion button:hover {
+    background: #d922fd;
     color: #fff
+}
+
+.financiacion button {
+    color: #7e8057;
+    background: #fff;
+} 
+
+.financiacion button:hover {
+    background: #d4de24;
+    color: #0d1035
 }
 
 form#msform button.next.action-button {
     margin-top: 500px;
 }
 
-#msform .action-button:hover,
-#msform .action-button:focus, 
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-    background-color: #2246ff
+#msform .action-button:hover, #msform .action-button:focus, #msform .action-button-previous:hover, #msform .action-button-previous:focus, form#msform button.boton-ruta-reiniciar:focus, form#msform button.boton-ruta-reiniciar:hover {
+    background-color: #2246ff;
 }
 
-#msform .action-button-previous, .boton-ruta-reiniciar {
+#msform .action-button-previous {
     max-width: 200px;
     background: transparent;
     color: white;
@@ -767,7 +796,7 @@ form#msform button.next.action-button {
     border: solid 1px #2246ff;
     transition: ease all .3s;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     margin-top: 25px;
 }
@@ -1082,6 +1111,8 @@ fieldset input {
 #progressbar li.active#cargo::after {
     background:  transparent;
 }
+
+
 
 
 /*Móviles*/
