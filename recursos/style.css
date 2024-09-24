@@ -627,6 +627,25 @@ section.accordion button:hover {
 .derechas {
     text-align: left;
 }
+
+
+
+#progressbar .active#account strong {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#progressbar .active#account strong:after {
+    content: "";
+    display: block;
+    border-bottom: solid 3px #fff;
+    width: 20%;
+    text-align: center;
+    margin: 1% auto;
+}
+
+
 /*steps*/
 
 
@@ -649,7 +668,9 @@ section.accordion button:hover {
     width: 100%;
     margin: 0;
     padding-bottom: 20px;
-    position: relative
+    position: relative;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 fieldset p {
     color: #fff;
@@ -734,17 +755,21 @@ form#msform button.next.action-button {
     background-color: #2246ff
 }
 
-#msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
+#msform .action-button-previous, .boton-ruta-reiniciar {
+    max-width: 200px;
+    background: transparent;
     color: white;
     border: 0 none;
-    border-radius: 0px;
+    border-radius: 9px;
     cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: right
+    padding: 20px 25px;
+    margin: 10px 0px 10px 5px;
+    border: solid 1px #2246ff;
+    transition: ease all .3s;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 25px;
 }
 
 
@@ -793,78 +818,170 @@ form#msform button.next.action-button {
 
 #progressbar li {
     list-style-type: none;
-    font-size: 15px;
+    font-size: 25px;
     width: 14%;
     float: left;
     position: relative;
-    font-weight: 400
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#progressbar li span {
+    color: #082362;
+}
+#progressbar li h4 {
+    color: #082362;
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#progressbar li span::after {
+    content: "";
+    border-bottom: solid 2px #082362;
+    display: block;
+    margin: 1% auto;
+    width: 25%;
+}
+
+li.active#account h4 {
+	color: #fab34d;
+}
+
+li.active#personal h4 {
+	color: #f555a8;
+}
+
+li.active#payment h4 {
+	color: #7bf5da;
+}
+li.active#confirm h4 {
+	color: #d922fd;
+}
+
+li.active#financiacion h4 {
+	color: #d4de24;
+}
+li.active#empleador h4 {
+	color: #f1363d;
+}
+li.active#cargo h4 {
+	color: #fdd722;
+}
+
+
+
+
+
+li.active#account span {
+	color: #fff;
+}
+
+li.active#account span::after {
+    border-bottom: solid 2px #fff;
+}
+
+li.active span {
+    color: #673AB7
+}
+#progressbar li.active span {
+    color: #fff;
+}
+
+#progressbar li.active span::after {
+    border-bottom: solid 2px #fff;
 }
 
 #progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f13e"
+    background: url(../imagenes/oit-ruta-curso.png) no-repeat;
+    background-color: #0a0c32;
+    background-position: center;
+   
 }
-
 #progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007"
+    background: url(../imagenes/oit-ruta-cualificacion-opaco.png) no-repeat;
+    background-color: #0a0c32;
+    background-position: center;
+   
 }
+#progressbar.active#personal:before {
+    background: url(../imagenes/oit-ruta-cualificacion.png) no-repeat;
 
+}
 #progressbar #payment:before {
-    font-family: FontAwesome;
-    content: "\f030"
+    background: url(../imagenes/oit-ruta-programa-opaco.png) no-repeat;
+    background-color: #0a0c32;
+    background-position: center;
+   
 }
-
 #progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c"
+    background: url(../imagenes/oit-ruta-institucion-opaco.png) no-repeat;
+    background-color: #0a0c32;
+    background-position: center;
+   
 }
 
-#progressbar #f:before {
-    font-family: FontAwesome;
-    content: "\f00c"
+#progressbar #financiacion:before {
+    background: url(../imagenes/oit-ruta-financiacion-opaco.png) no-repeat;
+    background-color: #0a0c32;
+    background-position: center;
+   
 }
 
-#progressbar #g:before {
-    font-family: FontAwesome;
-    content: "\f00c"
+#progressbar #empleador:before {
+    background: url(../imagenes/oit-ruta-empleador-opaco.png) no-repeat;
+    background-color: #0a0c32;
+    background-position: center;
+   
+}
+#progressbar #cargo:before {
+    background: url(../imagenes/oit-ruta-cargo-opaco.png) no-repeat;
+    background-color: #0a0c32;
+    background-position: center;
+   
 }
 
-#progressbar #h:before {
-    font-family: FontAwesome;
-    content: "\f00c"
+#progressbar #personal:before img {
+    opacity: 0.5;
 }
 
 
 #progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
+    content: '';
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
     display: block;
     font-size: 20px;
     color: #ffffff;
-    background: lightgray;
+    
+    background-size: auto;
+   
     border-radius: 50%;
     margin: 0 auto 10px auto;
-    padding: 2px
+    padding: 2px;
+    border: solid 4px #142998;
 }
 
 #progressbar li:after {
     content: '';
     width: 100%;
-    height: 2px;
-    background: lightgray;
+    height: 4px;
+    background: #142998;
     position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1
+    left: 80px;
+    top: 45px;
+    z-index: -1;
 }
 
-#progressbar li.active:before,
+#progressbar li.active:before {
+    background: #0a0c32
+}
 #progressbar li.active:after {
-    background: #673AB7
+    background: #142998
 }
-
+#progressbar li.active:before {
+    background: #0a0c32;
+}
 .progress {
     height: 20px
 }
@@ -877,14 +994,21 @@ form#msform button.next.action-button {
     width: 100%;
     object-fit: cover
 }
-
+#progressbar li#cargo:after {
+    display: none;
+}
 .derechas h4 {
     text-transform: uppercase;
     font-size: 25px;
     color: #fff;
     font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
 }
-
+.derechas::after {
+    content: '';
+    background: url(../imagenes/puntos.png); 
+}
 .derechas input, .derechas input::placeholder  {
     padding: 10px 20px;
     color: #5A7184;
@@ -893,6 +1017,70 @@ form#msform button.next.action-button {
     font-size: 22px;
 
 
+}
+fieldset input {
+    display: inline-block;
+}
+#progressbar li.active#account::before  {
+    border: solid 3px #fab34d;
+}
+
+#progressbar li.active#account::after {
+    background: #fab34d;
+}
+
+#progressbar li.active#personal::before {
+    border: solid 3px #f555a8;
+    background:  #0a0c32 url(../imagenes/oit-ruta-cualificacion.png) no-repeat center;
+}
+
+#progressbar li.active#personal::after {
+    background:  #f555a8;
+}
+
+#progressbar li.active#payment::before {
+    border: solid 3px #7bf5da;
+    background:  #0a0c32 url(../imagenes/oit-ruta-programa.png) no-repeat center;
+
+}
+
+#progressbar li.active#payment::after {
+    background:  #7bf5da;
+}
+
+#progressbar li.active#confirm::before {
+    border: solid 3px #d922fd;
+    background:  #0a0c32 url(../imagenes/oit-ruta-institucion.png) no-repeat center;
+
+}
+
+#progressbar li.active#confirm::after {
+    background:  #d922fd;
+}
+#progressbar li.active#financiacion::before {
+    border: solid 3px #d4de24;
+    background:  #0a0c32 url(../imagenes/oit-ruta-financiacion.png) no-repeat center;
+
+}
+
+#progressbar li.active#financiacion::after {
+    background:  #d4de24;
+}
+#progressbar li.active#empleador::before {
+    border: solid 3px #f1363d;
+    background:  #0a0c32 url(../imagenes/oit-ruta-empleador.png) no-repeat center;
+}
+
+#progressbar li.active#empleador::after {
+    background:  #f1363d;
+}
+#progressbar li.active#cargo::before {
+    border: solid 3px #fdd722;
+    background:  #0a0c32 url(../imagenes/oit-ruta-cargo.png) no-repeat center;
+}
+
+#progressbar li.active#cargo::after {
+    background:  transparent;
 }
 
 
