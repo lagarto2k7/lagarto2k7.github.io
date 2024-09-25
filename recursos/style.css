@@ -508,6 +508,7 @@ footer {
     color: #0a0c32;
     padding-left: 6.2%;
     padding-bottom: 30px;
+    overflow: hidden;
 }
   
   /* Visual styles */
