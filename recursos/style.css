@@ -29,9 +29,9 @@ div.navegacion {
     right: 0px;
 }
 .navegacion {
-    background: #1a193ac4;
+    background: #1a193a38;
     justify-content: end;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 .navegacion ul {
     display: flex;
@@ -46,7 +46,7 @@ div.navegacion {
 .navegacion ul li a {
     color: #fff;
     text-decoration: none;
-    animation: ease all .5s;
+    transition: ease all .5s;
 
 }
 .navegacion ul li a:hover {
