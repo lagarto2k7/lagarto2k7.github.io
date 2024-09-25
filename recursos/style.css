@@ -1282,7 +1282,7 @@ table, td, th {
     }
     #progressbar li {
         width: 25%;
-        flex: 20%;
+        flex: 30%;
     }
 
     #progressbar li:before {
@@ -1340,6 +1340,18 @@ table, td, th {
     margin-top: 10px;
     
 }
+
+#msform .action-button-previous, #msform .action-button, form#msform button.boton-ruta-reiniciar {
+    width: 100%;
+    min-height: 85px;
+
+}
+
+#progressbar {
+   
+    padding-left: 0;
+}
+ 
 }
   /*flecha*/
     .fixme { 
@@ -1526,8 +1538,18 @@ table, td, th {
      
         font-size: 20px;
     }
+    #progressbar li {
+        
+        font-size: 18px;
 
    
+}
+
+#progressbar li h4 {
+   
+    font-size: 11px;
+}
+
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) { 
@@ -1539,5 +1561,16 @@ table, td, th {
         
         padding-bottom: 95px;
     }
+    #progressbar li {
+        
+        font-size: 18px;
+
+   
+}
+
+#progressbar li h4 {
+   
+    font-size: 11px;
+}
 }
 
