@@ -475,10 +475,11 @@ h3.subtitulo-internas::after {
 }
 footer {
     width: 100%;
-    height: 150px;
-    background: #1a193a;
+    height: 30px;
+    background: transparent;
     margin-top: 50px;
     position: relative;
+    bottom: 0px;
 }
 /*acordeon*/
 :root {
@@ -592,7 +593,24 @@ footer {
     font-size: 25px;
     font-weight: 600;
 }
+.tab__content.pad-5 button {
+    background: red;
+}
+div.tab__content.pad-5.sub h4 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+section.accordion button.ac-button {
+    background: #2146FF;
+    border: solid transparent;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px 20px;
+    font-weight: 500;
+}
 .tab__label.pad-5 span {
     color: #9d96a8;
     font-size: 40px;
@@ -646,7 +664,11 @@ section.accordion button:hover {
     text-align: center;
     margin: 1% auto;
 }
+/*tabs*/
 
+  
+ 
+  
 
 /*steps*/
 
@@ -772,7 +794,9 @@ form#msform button {
     color: #7e8057;
     background: #fff;
 } 
-
+.centros {
+    text-align: center;
+}
 .financiacion button:hover {
     background: #d4de24;
     color: #0d1035
@@ -1149,6 +1173,27 @@ table, td, th {
   th, td {
     padding: 15px;
   }
+
+  .contenedor.subtitulos.divisor h4 {
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-top: 50px;
+}
+.contenedor.subtitulos.divisor h1 {
+    color: #fff;
+
+
+}
+.contenedor.subtitulos.divisor.cabecera {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-left: 5%;
+}
+
 /*Móviles*/
 @media (max-width: 850px) {
     .contenedor {
@@ -1551,7 +1596,53 @@ table, td, th {
    
     font-size: 11px;
 }
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.icono, .columna.izquierda-cincuenta.centro-vertical.eleccion img.icono, .columna.izquierda-cincuenta.centro-vertical.formacion img.icono, .columna.izquierda-cincuenta.centro-vertical.recursos img.icono, .columna.izquierda-cincuenta.centro-vertical.donde img.icono, .columna.izquierda-cincuenta.centro-vertical.desempenar img.icono, .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.icono 
 
+{
+    height: 200px;
+
+}
+
+
+.columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-barra {
+    position: absolute;
+    margin-left: 50px;
+    width: inherit;
+    margin-top: -59px;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.empleabilidad img.empleabilidad-s {
+    margin-top: 180px;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.desempenar img.desempenar-s {
+    margin-top: 192px;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.recursos img.recursos-s {
+    margin-top: 188px;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.donde img.donde-s {
+    margin-top: 185px;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.formacion img.formacion-s {
+    margin-top: 188px;
+}
+
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.transformacion-s {
+    margin-top: 188px;
+}
+
+
+    .columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-circulo {
+        margin-left: 93px;
+    }
+
+        #miObjeto {
+        margin-left: 178px;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) { 
