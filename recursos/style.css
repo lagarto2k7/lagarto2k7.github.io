@@ -425,7 +425,10 @@ h3.subtitulo-internas::after {
 .dot.azul {
     background: #2146FF ;
 }
-
+.derechas h4 img {
+    height: 20px;
+    margin-left: 30px;
+}
 .contenedor.fondo-azul-claro {
     background: #2146FF;
     margin-top: 60px;
