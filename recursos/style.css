@@ -1670,3 +1670,75 @@ table, td, th {
 }
 }
 
+@media (min-width: 1001px) and (max-width: 1350px) {
+    .columna.izquierda-cincuenta.centro-vertical.transformacion img.icono, .columna.izquierda-cincuenta.centro-vertical.eleccion img.icono, .columna.izquierda-cincuenta.centro-vertical.formacion img.icono, .columna.izquierda-cincuenta.centro-vertical.recursos img.icono, .columna.izquierda-cincuenta.centro-vertical.donde img.icono, .columna.izquierda-cincuenta.centro-vertical.desempenar img.icono, .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.icono {
+        
+        height: 200px;
+        
+    }
+    .columna.izquierda-cincuenta.centro-vertical.cumplido img.icono {
+        
+        height: 240px;
+   
+    }
+
+    .columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-barra {
+      
+        width: 280px;
+       
+    }
+    .fondo-circulo-uno img.fondo-circulo {
+        margin-left: 112px;
+        margin-top: -75px;
+    }
+    .columna.izquierda-cincuenta.centro-vertical.eleccion img.eleccion-s {
+        margin-top: 181px;
+    }
+    .columna.izquierda-cincuenta.centro-vertical.formacion img.formacion-s {
+        margin-top: 190px;
+    }
+
+.columna.izquierda-cincuenta.centro-vertical.donde img.donde-s {
+    margin-top: 191px;
+}
+.columna.izquierda-cincuenta.centro-vertical.recursos img.recursos-s {
+    margin-top: 189px;
+}
+.columna.izquierda-cincuenta.centro-vertical.desempenar img.desempenar-s {
+    margin-top: 192px;
+}
+.columna.izquierda-cincuenta.centro-vertical.empleabilidad img.empleabilidad-s {
+    margin-top: 192px;
+}
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.transformacion-s {
+    margin-top: 192px;
+}
+.columna.izquierda-cincuenta.centro-vertical.cumplido img.fondo-circulo {
+    margin-left: 95px;
+}
+.columna h2 {
+    font-size: 22px;
+}
+.contenedor h3 {
+    font-size: 26px;
+}
+.espacio-botones button {
+   
+    font-size: 18px;
+    
+}
+.boton-inicial button {
+  
+    font-size: 20px;
+    
+}
+#miObjeto {
+    margin-left: 178px;
+}
+.columna.izquierda-cincuenta.centro-vertical.transformacion img.icono, .columna.izquierda-cincuenta.centro-vertical.eleccion img.icono, .columna.izquierda-cincuenta.centro-vertical.formacion img.icono, .columna.izquierda-cincuenta.centro-vertical.recursos img.icono, .columna.izquierda-cincuenta.centro-vertical.donde img.icono, .columna.izquierda-cincuenta.centro-vertical.desempenar img.icono, .columna.izquierda-cincuenta.centro-vertical.empleabilidad img.icono {
+    margin-left: 32px;
+}
+.columna.cien.borde h1 {
+    font-size: 35px;
+}
+}

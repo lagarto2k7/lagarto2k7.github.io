@@ -106,9 +106,7 @@
 }
 
 @media (min-width: 1001px) and (max-width: 1050px) {
-    #miObjeto {
-        margin-left: 176px;
-    }
+   
 
     p, ol, li {
         font-size: 18px;
