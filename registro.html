@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="recursos/style.css">
     <link rel="stylesheet" type="text/css" href="recursos/reveal.css">
     <link rel="stylesheet" type="text/css" href="recursos/nav.css">
+    <link rel="stylesheet" type="text/css" href="recursos/tabs.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +21,12 @@
 <nav>
     
     <div class="contenedor navegacion">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="ruta.html">Ruta profesional</a></li>
-            <li><a href="emprendimiento.html">Emprendimiento</a></li>
-            <li><a href="financiamiento.html">Financiamiento</a></li>
-            <li><a href="test.html">Test</a></li>
-    </ul>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="mi-perfil.html">Mi perfil</a></li>
+        <li><a href="test.html">Test</a></li>
+       
+</ul>
     <div class="nav__icon">
             <span></span>
             <span></span>
@@ -33,25 +34,26 @@
     </div>    </div>
 
 </nav>
-<div class="arribita">dddd</div>
-<input id="tab-one" type="radio" name="grp" checked="checked"/>
-<label for="tab-one">Tab One</label>
+<section class="loginn">
+<div class="container">
+    <div class="container-form">
+        <h1>Registro</h1>
+        <form class="form-login" name="login" action="#" method="POST">
+            <input class="form-input" type="text" name="nombre" placeholder="Nombre Completo">
+            <input class="form-input" type="text" name="identidad" placeholder="identificación">
+            <input class="form-input" type="text" name="nacimiento" placeholder="Fecha de nacimiento">
+            <input class="form-input" type="email" name="email" placeholder="Correo electrónico">
+            <input class="form-input" type="text" name="usuario" placeholder="Nombre de usuario">
+            <input class="form-input" type="email" name="pass" placeholder="Contraseña">
+            <input class="form-input" type="text" name="reppass" placeholder="Repetir contraseña">
+            
+            <input class="form-btn" type="submit" value="Registrar">
+            <p>¿Ya está registrado? <a href="login.html">Iniciar sesión</a></p> 
+            
+        </form>    
+    </div>            
 <div>
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</div>
-
-<input id="tab-two" type="radio" name="grp" />
-<label for="tab-two">Tab Two</label>
-<div>
-  <img src="https://sbarthel.github.io/images/img/berg.JPG" alt="mountain" />
-</div>
-
-<input id="tab-three" type="radio" name="grp" />
-<label for="tab-three">Tab Three</label>
-<div>
-  ... no fixed height for tabbed area!
-</div>
-
+</section>
 <footer>
 
 </footer>
@@ -70,6 +72,7 @@
     <script src="recursos/menu.js"></script>
     <script src="recursos/flachita.js"></script>
     <script src="recursos/objeto.js"></script>
+    <script src="recursos/tabs.js"></script>
 
     
 </body>

@@ -72,6 +72,7 @@ div.navegacion {
     margin-bottom: 3px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 7px;
+    color: #0a0c32;
 }
     
 .fondo-blanco-parrafos {
@@ -535,6 +536,7 @@ footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
     align-items: center;
+    margin: 0;
   }
   .tab__label::after {
     content: "+";
@@ -596,16 +598,14 @@ footer {
     font-size: 25px;
     font-weight: 600;
 }
-.tab__content.pad-5 button {
-    background: red;
-}
+
 div.tab__content.pad-5.sub h4 {
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-section.accordion button.ac-button {
+section.accordion button.ac-button, button.ac-button {
     background: #2146FF;
     border: solid transparent;
     margin-top: 20px;
@@ -613,6 +613,7 @@ section.accordion button.ac-button {
     font-size: 16px;
     padding: 15px 20px;
     font-weight: 500;
+    color: #fff;
 }
 .tab__label.pad-5 span {
     color: #9d96a8;
@@ -670,8 +671,7 @@ section.accordion button:hover {
 /*tabs*/
 
   
- 
-  
+
 
 /*steps*/
 
@@ -1196,7 +1196,83 @@ table, td, th {
     padding-left: 5%;
     padding-left: 5%;
 }
+.cabecero-test h4 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+}
 
+section.contenedor-vertical.arribita.columna.cabecero-test h2 {
+    font-size: 27px;
+    margin: 0;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: transparent;
+}
+
+.NextAndReset {
+    display: flex;
+}
+
+
+#resetBtn {
+    background-color: transparent;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    color: #eceff1;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+
+.btn.action-button:hover {
+	background: #f555a8 ;
+}
+
+.btn.radiobtn.btn-primary {
+    text-transform: uppercase;
+}
+
+.btn-group-justified {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+label {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.cabecero-test img {
+    padding-top: 30px;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #fff;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    /* flex-basis: auto; */
+    flex: 20%;
+}
 /*Móviles*/
 @media (max-width: 850px) {
     .contenedor {
@@ -1230,8 +1306,9 @@ table, td, th {
     .columna h2 {
         color: blueviolet;
         text-transform: uppercase;
-        font-size: 28px;
+        font-size: 37px;
         letter-spacing: 5px;
+        font-weight: 600;
     }
 
    

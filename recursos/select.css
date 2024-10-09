@@ -1,5 +1,4 @@
 #id_work_days{
-    height: 44px;
     border: none;
     overflow: hidden;
   }
@@ -11,10 +10,9 @@
   }
   #id_work_days option{
     font-size: 1.2em;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
     margin-right: 20px;
-    display: inline-block;
     cursor: pointer;
     border:rgb(204, 204, 0) solid 1px;
     border-radius: 5px;
@@ -23,4 +21,8 @@
 
   select#id_work_days {
     background: transparent;
+}
+
+.seleccion-1 {
+    display: flex;
 }
