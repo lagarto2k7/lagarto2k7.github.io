@@ -183,6 +183,7 @@ input.form-input {
     margin: 0 25px 20px;
     font-family: 'Poppins';
     font-size: 20px;
+    padding-left: 20px;
 }
 .form-input::placeholder{
     color:  rgb(138, 133, 133);
